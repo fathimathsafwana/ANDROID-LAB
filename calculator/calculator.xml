@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Here"
+        android:textSize="24sp"
+        android:inputType="none"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Number Buttons -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+            <Button android:id="@+id/b1" android:layout_width="60dp" android:layout_height="60dp" android:text="1"/>
+            <Button android:id="@+id/b2" android:layout_width="60dp" android:layout_height="60dp" android:text="2"/>
+            <Button android:id="@+id/b3" android:layout_width="60dp" android:layout_height="60dp" android:text="3"/>
+
+            <Button android:id="@+id/b4" android:layout_width="60dp" android:layout_height="60dp" android:text="4"/>
+            <Button android:id="@+id/b5" android:layout_width="60dp" android:layout_height="60dp" android:text="5"/>
+            <Button android:id="@+id/b6" android:layout_width="60dp" android:layout_height="60dp" android:text="6"/>
+
+            <Button android:id="@+id/b7" android:layout_width="60dp" android:layout_height="60dp" android:text="7"/>
+            <Button android:id="@+id/b8" android:layout_width="60dp" android:layout_height="60dp" android:text="8"/>
+            <Button android:id="@+id/b9" android:layout_width="60dp" android:layout_height="60dp" android:text="9"/>
+
+            <Button android:id="@+id/bDot" android:layout_width="60dp" android:layout_height="60dp" android:text="."/>
+            <Button android:id="@+id/b0" android:layout_width="60dp" android:layout_height="60dp" android:text="0"/>
+            <Button android:id="@+id/bClear" android:layout_width="60dp" android:layout_height="60dp" android:text="C"/>
+
+        </GridLayout>
+
+        <!-- Space -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- Operator Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bAdd"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="+"/>
+
+            <Button
+                android:id="@+id/bSub"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="-"/>
+
+            <Button
+                android:id="@+id/bMul"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="X"/>
+
+            <Button
+                android:id="@+id/bDiv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="/"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bEqual"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="="/>
+
+</LinearLayout>
